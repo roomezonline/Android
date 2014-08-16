@@ -65,7 +65,7 @@ public class UserAdapter extends BaseAdapter {
 		} else {
 			TbUser temp = (TbUser) data.get(position);
 
-			text.setText(temp.getUserName());
+			text.setText(temp.getUserName() + "-" + temp.getId());
 			Status.setText(temp.getStatus());
 
 		}
