@@ -48,6 +48,9 @@ public class TbMessage {
     public void setCategoryTitle(String categoryTitle) {
         this.categoryTitle = categoryTitle;
     }
+    
+    
+    
 
     public int getUserId() {
         return userId;
@@ -112,6 +115,8 @@ public class TbMessage {
                     .getPrimitivePropertySafelyAsString("Description"));
             result.setCategoryTitle(obj
                     .getPrimitivePropertySafelyAsString("CategoryTitle"));
+            result.setUserName(obj
+                    .getPrimitivePropertySafelyAsString("UserName"));
             String regdate = obj
                     .getPrimitivePropertySafelyAsString("RegisterDate");
             result.setSendDate(obj

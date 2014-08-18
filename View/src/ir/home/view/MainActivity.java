@@ -388,10 +388,10 @@ public class MainActivity extends Activity {
 			int i = 0;
 			for (; i < list.size(); i++) {
 				TbMessage temp = list.get(i);
-				initGetUserInformation(temp);
+				//initGetUserInformation(temp);
 				try {
 					db.insertTbMessage(temp.getId(), temp.getUserId(),
-							userNameText, temp.getCategoryTitle(),
+							temp.getUserName(), temp.getCategoryTitle(),
 							temp.getCategoryId(), temp.getDescription(),
 							temp.getShare(), temp.getSendDate());
 				} catch (ParseException e) {
@@ -437,10 +437,10 @@ public class MainActivity extends Activity {
 			int i = 0;
 			for (; i < list.size(); i++) {
 				TbMessage temp = list.get(i);
-				initGetUserInformation(temp);
+				//initGetUserInformation(temp);
 				try {
 					db.insertTbMessage(temp.getId(), temp.getUserId(),
-							userNameText, temp.getCategoryTitle(),
+							temp.getUserName(), temp.getCategoryTitle(),
 							temp.getCategoryId(), temp.getDescription(),
 							temp.getShare(), temp.getSendDate());
 				} catch (ParseException e) {
